@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonimg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonborder"
+            android:drawableTop="@drawable/ic_thumb_down"
+            android:text="D\nI\nS\nL\nI\nK\nE\n"
+            android:textColor="#CD0000"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <ImageView
+                android:id="@+id/my_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/newimageborder" />
+
+            <TextView
+                android:id="@+id/whole_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:gravity="center_horizontal"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whole_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:gravity="center_horizontal"
+                android:maxWidth="200dp"
+                android:text="Aboutme"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/emailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/about_me"
+                android:layout_alignStart="@+id/about_me"
+                android:layout_below="@+id/about_me"
+                android:layout_marginTop="44dp"
+                android:gravity="center_horizontal"
+                android:text="emailAdress"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/emailAddress"
+                android:layout_alignStart="@+id/emailAddress"
+                android:layout_below="@+id/emailAddress"
+                android:layout_marginTop="31dp"
+                android:gravity="center_horizontal"
+                android:text="phoneNumber"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonborder"
+            android:drawableTop="@drawable/ic_thumb_up"
+            android:text="L\nI\nK\nE\n"
+            android:textColor="#00AF33"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
